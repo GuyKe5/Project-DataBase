@@ -10,7 +10,7 @@ namespace Project_DataBase.Classes
         public string name { get; set; }
         public string discription { get; set; }
         public User auther { get; set; }
-        public Test[] tests{ get; set; }
+        //public Test[] tests{ get; set; }
     }
 
 }
