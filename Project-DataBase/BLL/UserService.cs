@@ -12,9 +12,9 @@ namespace Project_DataBase.BLL
     { 
         public static void GetUserData(string username,string password)
         {
-            DataTable data = UserServiceDAL.GetUserDataDAL(username, password);
-            Console.WriteLine(data);
-
+            User TempUser = new User(userName:username,password:password); 
+            DataTable data = UserServiceDAL.GetUserDataDAL(TempUser);
+            TempUser.UpdateData(data); 
 
         }
     }

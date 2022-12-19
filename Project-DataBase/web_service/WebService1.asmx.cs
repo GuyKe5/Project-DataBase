@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
-
+using Project_DataBase.BLL;
 namespace Project_DataBase.web_service
 {
     /// <summary>
@@ -27,5 +27,13 @@ namespace Project_DataBase.web_service
         {
             return "a";
         }
+        [WebMethod]
+        public string GetUserData(string username, string password)
+        {
+            return GetUserData(username, password);
+        }
+
+
+
     }
 }
